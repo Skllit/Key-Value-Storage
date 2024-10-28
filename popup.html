@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Floating Notepad</title>
+</head>
+<body>
+    <div id="notepad">
+        <h3>Floating Notepad</h3>
+        <input type="text" id="searchKey" placeholder="Search..." />
+        <ul id="suggestions"></ul>
+        <div>
+            <input type="text" id="key" placeholder="Key (Name)" />
+            <input type="text" id="value" placeholder="Value (Snippet)" />
+            <button id="addBtn">Add</button>
+            <button id="updateBtn">Update</button>
+            <button id="deleteBtn">Delete</button>
+            <button id="clearBtn">Clear All</button>
+            <button id="toggleEntriesBtn">Show Entries</button>
+        </div>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <div id="status"></div>
+        <div id="displayArea" style="display: none;">
+            <h4>Selected Entry:</h4>
+            <p id="displayKey">Key: </p>
+            <p id="displayValue">Value: </p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

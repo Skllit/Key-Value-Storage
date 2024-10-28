@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Floating Notepad",
+    "version": "1.0",
+    "description": "A floating notepad with search, add, delete, and update options.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png" // Add an icon file in your directory
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
